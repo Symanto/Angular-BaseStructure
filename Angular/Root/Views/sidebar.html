@@ -1,0 +1,33 @@
+<div id="sidebar" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <a href ng-click="showUserProfile(user.Id)">
+                <img ng-src="{{ user.Symonkey.ImageUrl }}" alt="{{ user.Surname }} {{ user.Name }} Profile Image" class="profile-img" width="160">
+                <img ng-src="{{ user.ImageUrl }}"  alt="{{ user.Surname }} {{ user.Name }} Profile Image" class="img-circle profile-img-symonkey" width="80">
+
+                <p class="sidebar-user-surname">{{ user.Surname }}</p>
+                <p class="sidebar-user-name">{{ user.Name }}</p>
+            </a>
+
+            <div class="row">
+                <div class="col-md-4 sidebar-eme-value">C: ({{ user.Connectivity }})</div>
+                <div class="col-md-4 sidebar-eme-value">D: ({{ user.Diversity }})</div>
+                <div class="col-md-4 sidebar-eme-value">E: ({{ user.Engagement }})</div>
+            </div>
+
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <ul class="list-unstyled">
+            <li class="sidebar-element"><a href="#" ><i class="fa fa-tachometer sidebar-icon"></i> Dashboard</a></li>
+            <li class="sidebar-element"><a ui-sref="quest" ui-sref-opts="{ reload: true }" ui-sref-active="active"><i class="fa fa-calendar-o sidebar-icon"></i> Quests</a></li>
+            <li class="sidebar-element"><a ui-sref="notification" ui-sref-opts="{ reload: true }" ui-sref-active="active"><i class="fa fa-bell sidebar-icon"></i> Notifications<span ng-show="unreadNotificationCount > 0" class="badge">{{ unreadNotificationCount }}</span></a></li>
+            <li class="sidebar-element"><a ui-sref="user.friend({userId: user.Id})" ui-sref-opts="{ reload: true }" ui-sref-active="active"><i class="fa fa-users sidebar-icon"></i> Friends</a></li>
+            <li class="sidebar-element"><a ui-sref="question" ui-sref-opts="{ reload: true }" ui-sref-active="active"><i class="fa fa-question-circle sidebar-icon"></i> Questions</a></li>
+            <li class="sidebar-element"><a href="#"><i class="fa fa-certificate sidebar-icon"></i> Badges</a></li>
+            <li class="sidebar-element"><a href="#"><i class="fa fa-suitcase sidebar-icon"></i> Company Hub</a></li>
+        </ul>
+    </div>
+</div>

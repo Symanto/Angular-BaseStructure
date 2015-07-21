@@ -1,0 +1,38 @@
+{
+  "name": "Symanto Project",
+  "version": "0.0.1",  
+  "description": "Project description here",
+  "main": "index.html",
+  "keywords": [
+    "Symanto"
+  ],
+  "license": "None",
+  "homepage": "http://www.symanto.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15",
+    "angular-animate": "~1.3.15",
+    "angular-bootstrap": "~0.13.0",
+    "angular-cookies": "~1.3.15",
+    "angular-filter": "~0.5.4",
+    "angular-mocks": "~1.3.15",
+    "angular-sanitize": "~1.3.15",
+    "angular-ui-router": "~0.2.15",   
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.3.0",
+    "jquery": "~2.1.4",
+    "less": "~2.5.0",
+    "xdomain": "~0.7.3",    
+    "symanto-angular-sessionmanagement": "~0.0.2",
+    "symanto-angular-httpservice": "~0.0.2",
+    "symanto-angular-messageservice": "~0.0.1",
+    "symanto-angular-loadingindicatorservice": "~0.0.2",
+    "symanto-angular-tools": "~0.0.1"
+  }s
+}

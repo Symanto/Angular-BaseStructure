@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The description of my page" />
+
+    <title>eMe</title>
+
+    <!-- Less -->
+    <!-- TODO: When going productive, implement the Less compiler server based! -->
+    <link href="Styles/Less/styles.less" rel="stylesheet/less" type="text/css" />
+    <link href="bower_components/angular-xeditable/dist/css/xeditable.css" rel="stylesheet"/>
+
+    <!-- Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/less/dist/less.min.js"></script>
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet/less" type="text/css" />
+    <script src="bower_components/symanto-angular-tools/Tools.js"></script>
+
+    <!-- Bootstrap additional components -->
+    <!-- Bootstrap itself is loaded via LESS -->
+    <script src="bower_components/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+    <link href="Scripts/Bootstrap-Datepicker/bootstrap-datepicker3.css" rel="stylesheet/less" type="text/css" />
+    <script src="Scripts/Bootstrap-Datepicker/bootstrap-datepicker.min.js"></script>
+
+    <!-- Internet Explorer has problems with Cross Domain Support at HTTP requests.
+         This means that a request from a frontend that lies somewhere else than the server does can fail in IE.
+         For this we need to import this 3rd party library, that solves that problem. -->
+    <!--[if IE]><script src="bower_components/xdomain/dist/xdomain.min.js"></script><![endif]-->
+</head>
+<body>
+<!--Angular Starting Point-->
+
+<div ng-app="Symanto.Root">
+    <div ui-view></div>
+</div>
+
+<!-- Angular.js Framework -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<!-- Angular.js additional components -->
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="bower_components/angular-xeditable/dist/js/xeditable.min.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+
+<!-- Symanto Angular components -->
+<script src="bower_components/symanto-angular-httpservice/HttpService.js"></script>
+<script src="bower_components/symanto-angular-loadingindicatorservice/LoadingIndicatorService.js"></script>
+<script src="bower_components/symanto-angular-messageservice/MessageService.js"></script>
+<script src="bower_components/symanto-angular-sessionmanagement/SessionManagement.js"></script>
+
+<!-- Custom modules -->
+<script src="Angular/Root/Root.js"></script>
+<script src="Angular/Root/Services/BasePathInterceptor.js"></script>
+<script src="Angular/Root/States/States.js"></script>
+<script src="Angular/Root/Controllers/RootController.js"></script>
+<script src="Angular/Root/Controllers/WelcomeController.js"></script>
+<script src="Angular/Root/Controllers/SidebarController.js"></script>
+
+<script src="Angular/SessionManagement/States/States.js"></script>
+<script src="Angular/SessionManagement/Controllers/LoginController.js"></script>
+
+<script src="Angular/User/User.js"></script>
+<script src="Angular/User/States/States.js"></script>
+<script src="Angular/User/Controllers/UserController.js"></script>
+<script src="Angular/User/Controllers/FriendsController.js"></script>
+<script src="Angular/User/Services/UserService.js"></script>
+<script src="Angular/User/Directives/UserInfoPanel.js"></script>
+
+<script src="Angular/Action/Action.js"></script>
+<script src="Angular/Action/Services/ActionService.js"></script>
+
+<script src="Angular/Notification/Notification.js"></script>
+<script src="Angular/Notification/Controllers/NotificationController.js"></script>
+<script src="Angular/Notification/Services/NotificationService.js"></script>
+<script src="Angular/Notification/States/States.js"></script>
+
+<script src="Angular/Quest/Quest.js"></script>
+<script src="Angular/Quest/Controllers/QuestController.js"></script>
+<script src="Angular/Quest/Controllers/QuestDetailsController.js"></script>
+<script src="Angular/Quest/Controllers/QuestDetailsBadgeController.js"></script>
+<script src="Angular/Quest/Controllers/QuestDetailsParticipantController.js"></script>
+<script src="Angular/Quest/Controllers/QuestDetailsTaskController.js"></script>
+<script src="Angular/Quest/Services/QuestService.js"></script>
+<script src="Angular/Quest/Services/QuestParticipantService.js"></script>
+<script src="Angular/Quest/Services/QuestTaskService.js"></script>
+<script src="Angular/Quest/States/States.js"></script>
+
+<script src="Angular/Question/Question.js"></script>
+<script src="Angular/Question/Controllers/QuestionController.js"></script>
+<script src="Angular/Question/Controllers/QuestionDetailsController.js"></script>
+<script src="Angular/Question/Controllers/QuestionDetailsCommentController.js"></script>
+<script src="Angular/Question/Controllers/QuestionTagController.js"></script>
+<script src="Angular/Question/Services/QuestionService.js"></script>
+<script src="Angular/Question/States/States.js"></script>
+<script src="Angular/Question/Directives/questionRating.js"></script>
+
+<!-- Directives -->
+<script src="Angular/Root/Directives/elastic.js"></script>
+
+<!-- Filters -->
+</body>
+</html>
